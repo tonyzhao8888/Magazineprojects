@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface XXXAppDelegate : UIResponder <UIApplicationDelegate>
+@class RESideMenu;
+@interface XXXAppDelegate : UIResponder <UIApplicationDelegate>{
+    UIImageView *zView;//Z图片ImageView
+    UIImageView *fView;//F图片ImageView
+    
+    
+    UIView *rView;//图片的UIView
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong, readonly, nonatomic) RESideMenu *sideMenu;
++ (NSInteger)OSVersion;
 @end
